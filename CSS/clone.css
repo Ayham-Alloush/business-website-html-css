@@ -1,407 +1,1141 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="training">
-    <title>maker</title>
-    <link rel="stylesheet" href="CSS/all.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/clone.css">
-  </head>
-  <body>
-    <!-- Home -->
-    <section class="home" id="home">
-      <header class="home-header">
-        <i class="fa-solid fa-magnifying-glass fa-custom"></i>
-        <div class="logo">
-          <a href="clone.html" >
-            <img src="images/logo.png" alt="">
-          </a>
-        </div>
-        <img src="images/menu_icon.png" alt="" class="menu-logo">
-        <div class="menu">
-          <i class="fa-solid fa-xmark"></i>
-          <ul  class="menu-list">
-            <li>
-              <a href="clone.html">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#we-do">We Do</a>
-            </li>
-            <li>
-              <a href="#team">Our Team</a>
-            </li>
-            <li>
-              <a href="#test">Testimonial</a>
-            </li>
-            <li>
-              <a href="#call">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </header>
-      <div class="container">
-        <section class="home-section">
-          <div class="sm-wrap">
-            <p class="software">SOFTWARE</p>
-            <p class="maker">MAKER</p>
-          </div>
-          <a href="#home" class="about">
-          <button class="about">ABOUT US</button>
-          </a>
-          <div class="icons-wrap">
-            <a href="#home">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a> 
-            <a href="#home">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#home">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#home">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </section>
-      </div>
-    </section>
-    <!-- Home -->
+html{
+  scroll-behavior: smooth ;
+}
 
-    <!-- About -->
-    <section class="about-section-full" id="about">
-      <div class="container">
-        <section class="about-section">
-          <div class="text-container">
-            <h1 class="about-word">About</h1>
-            <p class="about-text">
-              sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud sit amet, consectetur adipiscing elit, sed do
-            </p>
-            <img src="images/about_img.png" alt="" class="about-img">
-          </div>
-          <img src="images/about_right.jpg" alt="" class="right-about">
-        </section>
-      </div>
-    </section>
-    <!-- About -->
+body{
+  margin: 0 ;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    <!-- Software Maker -->
-    <section class="software-maker-section">
-      <div class="container-add">
-        <section class="software-maker">
-          <div class="software-maker-left">
-            <h1 class="software-maker-word">Software Maker</h1>
-            <p class="software-maker-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            </p>
-            <a href="#home" class="click-here">
-              <button class="click-here-button">CLICK HERE</button>
-            </a>
-          </div>
-        </section>
-      </div>
-      <!-- putting the img outside the container to change its width depending on software-maker-section width -->
-      <img src="images/software_img.jpg" alt="" class="software-maker-img">
-    </section>
-    <!-- Software Maker -->
+p{
+  margin: 0 ;
+}
 
-    <!-- What We Do -->
-    <div class="container" id="we-do">
-      <section class="do-section">
-        <h1 class="do-word">What We Do</h1>
-        <p class="do-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore
-        </p>
-        <div class="three-boxes">
-          <article class="child">
-            <div class="circle">1</div>
-            <h2 class="title">Software Maker</h2>
-            <p class="article-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            </p>
-          </article>
-          <article class="child">
-            <div class="circle">1</div>
-            <h2 class="title">Expense Management Maker</h2>
-            <p class="article-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            </p>
-          </article>
-          <article class="child">
-            <div class="circle">1</div>
-            <h2 class="title">Group Revenue Maker</h2>
-            <p class="article-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            </p>
-          </article>
-        </div>
-        <a href="#home" class="read">
-          <button class="read-more">READ MORE</button>
-        </a>
-      </section>
-    </div>
-    <!-- What We Do -->
+a{
+  color: white ;
+  text-decoration: none ; 
+}
 
-    <!-- Our Team -->
-    <section class="our-section" id="team">
-      <div class="container">
-        <h1 class="our-word">Our Team</h1>
-        <p class="our-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore
-        </p>
-        <div class="three-pic">
-          <article class="one-box">
-            <img src="images/team_img1.jpg" alt="">
-            <div class="inside">
-              <div class="icons">
-                <a href="#home">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#home">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#home">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="#home">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-              <p class="name">Jose Haward</p>
-              <p class="job">Software</p>
-            </div>
-          </article>
-          <article class="one-box">
-            <img src="images/team_img2.jpg" alt="">
-            <div class="inside">
-              <div class="icons">
-                <a href="#home">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#home">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#home">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="#home">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-              <p class="name">Sandy Miller</p>
-              <p class="job">Software</p>
-            </div>
-          </article>
-          <article class="one-box">
-            <img src="images/team_img3.jpg" alt="">
-            <div class="inside">
-              <div class="icons">
-                <a href="#home">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#home">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#home">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="#home">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-              <p class="name">Mark Den</p>
-              <p class="job">Software</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- Our Team -->
+.container{
+  width: 1140px ;
+  margin: 0 auto ;
+  position: relative ;
+  /* border: yellow 2px solid ;; */
+}
 
-    <!-- Call Back -->
-    <section>
-      <header class="call-back-text" id="call">
-        <h1 class="call-word">Request A Call Back</h1>
-        <p class="call-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore
-        </p>
-      </header>
-      <section class="call-back-full">
-        <div class="container-add-two">
-          <section class="call-info">
-            <form class="info">
-              <input type="text" placeholder="Name">
-              <input type="email" placeholder="Email" class="call-email">
-              <input type="text" placeholder="Phone Number">
-              <input type="text" placeholder="Message" class="message">
-              <input type="submit" class="send-button" value="SEND">
-            </form>
-            <div class="calling-info">
-              <div class="call">
-                <a href="#home">
-                  <i class="fa-solid fa-phone"></i>
-                </a>
-                <p>(+71) 1234567890</p>
-                <p>(+71) 1234567890</p>
-              </div>
-              <div class="gmail">
-                <a href="#home">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-                <p>demo@gmail.com</p>
-              </div>
-            </div>
-            <div class="call-icons">
-              <a href="#home">
-                <i class="fa-brands fa-facebook-f fa-fw"></i>
-              </a>
-              <a href="#home">
-                <i class="fa-brands fa-twitter fa-fw"></i>
-              </a>
-              <a href="#home">
-                <i class="fa-brands fa-instagram fa-fw"></i>
-              </a>
-            </div>
-          </section>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d96793.88801124573!2d-73.85444!3d40.700204!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1671058680161!5m2!1sen!2sus"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" class="map">
-        </iframe>
-      </section>
-    </section>
-    <!-- Call Back -->
+  /* Home Section Starts ----------------------------------------------- */
+.home{
+  overflow: hidden ;
+  width: 100% ;
+  background-image: url(../images/banner.jpg);
+  background-size: 100% 100% ;
+}
+
+.home-header{
+  height: 150px ;
+  position: relative ;
+}
+
+  /* search icon */
+.fa-custom{
+  color: gray ;
+  position: absolute ;
+  top: 25% ;
+  left: 5% ;
+  cursor: pointer;
+}
+
+.logo{
+  width: fit-content ;
+  padding: 25px ;
+  padding-right: 50px ;
+  padding-left: 50px ;
+  border: 3px solid white ;
+  border-top: none ;
+  margin: 0 auto ; 
+}
+
+.menu-logo{
+  position: absolute ;
+  top: 25% ;
+  right: 5% ;
+  cursor: pointer ;
+}
+
+  /* the div that contains " menu items as list items " */
+.menu{
+  background-color: black ;
+  /* when width equals to 0 we want the menu items to be hidden .. not floating outside */
+  overflow-x: hidden ;
+  overflow-y: auto ;
+  width: 0 ;
+  /* you can uncomment next line to see the menu design */
+  /* width: 250px ; */
+  height: 100vh ;
+  position: fixed ;
+  top: 0 ;
+  left: 0 ;
+  z-index: 1 ;
+  transition: width 0.3s linear ;
+}
+
+  /* when hover on menu logo .. menu will appear */
+.menu-logo:hover + .menu{
+  width: 250px ;
+}
+
+.fa-xmark{
+  color: white ;
+  font-size: 1.5rem ;
+  position: absolute ;
+  top: 30px ;
+  right: 35px ;
+  cursor: pointer ;
+}
+
+.menu-list{
+  list-style: none ;
+  font-size: 20px ;
+  padding: 0 ;
+  position: absolute ;
+  top: 8% ; 
+  left: 15% ;
+}
+
+  /* making a space between menu items */
+.menu-list>li{
+  margin-bottom: 25px ; 
+}
+
+.menu-list a{
+  transition: color 0.3s linear ;
+}
+
+.menu-list a:hover {
+  color: rgb(255, 166, 0) ;
+} 
+
+.home-section{ 
+  text-align: center ;
+  height: 755px ;
+
+}
+
+.sm-wrap{
+  color: white ;
+  font-size: 5rem ;
+  font-weight: 800 ;
+  letter-spacing: 91px ;
+  /* width equals to container */
+  width: 100% ;
+  position: absolute ;
+  /* 
+    ** centering the text vertically .   
+    ** subtract 150px because header took 150px .
+  */
+  top: calc(50% - 150px) ;
+  transform: translatey(-50%) ;
+}
+
+.maker{
+  font-size: 4rem ;
+  /* text-indent equals to letter spacing */
+  text-indent: 91px ;
+  margin-top: 20px ; 
+}
+
+  /* <a> that contains button */
+a.about{
+  width: 200px ;
+  height: 60px ;
+  margin: 70px auto ;
+  position: absolute ;
+  top: 50% ;
+  right: 0 ;
+  left: 0 ;
+}
+
+button.about{
+  color:rgb(60, 60, 41) ;
+  font-size: 1.2rem ;
+  width: 100% ;
+  height: 100% ;
+  border-radius: 10px ;
+  border: none ;
+  cursor: pointer ;
+  transition: background-color 0.7s linear ;
+}
+
+button.about:hover{
+  background-color: rgb(255, 166, 0) ;
+}
+
+  /* div that contains icons under the about button ( facebook ... ) */
+.icons-wrap{
+  color: white ;
+  font-size: 25px ;
+  display: flex ;
+  justify-content: space-between ;
+  width: 200px ;
+  margin: 200px auto ;
+  position: absolute ;
+  top: 50% ;
+  right: 0 ;
+  left: 0 ; 
+}
+  /* Home Section Ends ----------------------------------------------- */
+
+  /* About Section Starts -------------------------------------------------- */
+.about-word{
+  color: rgb(42, 30, 30) ;  
+  font-size: 2.5rem ;
+  font-weight: 800 ;
+  margin: 0 ;
+}
+
+.about-text{
+  font-size: 19px ;
+  line-height: 35px ;
+  padding: 25px ;
+  border: 1px solid black ;
+  margin-top: 20px ;
+}
+
+.about-section-full{
+  background-color: rgb(255, 252, 254);
+  width: 100% ;
+  /* making about-section far from the previous sectoin and the next section */
+  margin: 80px 0 ;
+}
+
+.about-section{
+  /* equals to its container */
+  width: 100% ;
+  display: flex ;
+  justify-content: space-between ;
+  flex-wrap: wrap ;
+  /* to prevent stretch */
+  align-items: flex-start;
+}
+
+  /* text container which has text and img */
+.text-container{
+  width: 40% ;
+}
+
+.about-img{
+  /* margin-left: -75px ; */
+  width: 100% ;
+  /* making a part of img outside the container from left  */
+  transform: translateX(-15%) ;
+  /* left: 50% ; */
+}
+  /* right img */
+.right-about{
+  width: 57% ;
+  margin-top: 30px ;
+}
+  /* About Section Ends -------------------------------------------------- */
+
+  /* Software Maker Section Starts ---------------------------------------------  */
+.software-maker-section{
+  background-color: #240082 ;  
+  color: white ;
+  position: relative ;
+  /* making the container far from top 75px */ 
+  padding-top: 70px ;
+  padding-left: 20px ;
+}
+  /* special container */
+.container-add{
+  width: 95% ;
+}
+
+  /* the section inside the container */
+.software-maker{
+  width: 100% ;
+}
+
+  /* div that include text and click here button */
+.software-maker-left{
+  width: 47% ;
+}
+
+.software-maker-word{
+  font-size: 2.5rem ;
+  font-weight: 800 ;
+  margin: 0 ; 
+}
+
+.software-maker-text{
+  font-size: 1.2rem ;
+  line-height: 35px ;
+  padding: 40px ;
+  border: 1px solid white ;
+  margin-top: 35px ;
+  /* margin-left: 20px ; */
+}
+
+.click-here-button{
+  font-size: 1.2rem ;
+  width: 200px ;
+  height: 70px ;
+  border: none ;
+  border-radius: 10px ;
+  margin: 45px 0 70px;
+  cursor: pointer ;
+  transition: color 0.3s linear , background-color 0.7s linear  ;
+}
+
+.click-here-button:hover{
+  background-color:rgb(255, 166, 0) ;
+  color: white ;
+}
+
+.software-maker-img{
+  /* width equals to 50% of software-maker-section */ 
+  width: 50% ;
+  height: 100% ;
+  position: absolute ;
+  top: 0 ;
+  right: 0 ;
+}
+  /* Software Maker Section Ends ---------------------------------------------  */
+
+  /* What We Do Section Starts ---------------------------------------------------- */
+.do-section{
+  text-align: center;
+  padding: 100px 0 ;
+}
+
+.do-word{
+  color:rgb(51, 51, 51) ;
+  font-size: 2rem ;
+  font-weight: 800;
+  margin: 0 ; 
+}
+
+.do-text{
+  font-size: 1.2rem ;
+  margin: 15px 0 50px ;
+}
+
+.three-boxes{
+  display: grid ;
+  grid-template-columns: repeat(3,1fr); 
+  column-gap: 30px ;
+}
+
+.child{
+  border: 1px solid black ;
+  border-radius: 10px ;
+  padding: 30px ;
+  padding-bottom: 70px ;
+  transition: background-color 0.7s linear , color 0.5s linear ;
+  margin-top: 25px; 
+}
+
+.child:hover{
+  background-color: #240082;
+  color: white ;
+}
+
+.circle{
+  background-color: white ;
+  color: #240082 ;
+  font-size: 2.5rem ;
+  font-weight: bold ;
+  /* centring the number vertically */
+  line-height: 60px ;
+  width: 60px ;
+  height: 60px ;
+  border: 2px solid #240082 ;
+  border-radius: 50% ;
+  margin: 0 auto ;
+}
+
+.title{
+  font-size: 1.4rem ;
+  font-weight: 800;
+  margin: 30px 0 ;
+}
+
+.article-text{
+  font-size: 1.2rem ;
+  font-weight: 500 ;
+  line-height: 30px ;
+}
+
+.read-more{
+  background-color: black ;
+  color: white ;
+  font-weight: 300;
+  width: 200px ;
+  height: 60px ;
+  border: none ;
+  border-radius: 10px ;
+  margin-top: 60px ;
+  cursor: pointer ;
+  transition: background-color 0.7s linear , color 0.5s linear ;
+}
+
+.read-more:hover{
+  background-color: rgb(255, 166, 0) ;
+  color: white ;
+}
+  /* What We Do Section Ends ---------------------------------------------------- */
+
+  /* Our Team Section Starts ---------------------------------------------------- */
+.our-section{
+  background-color: #37139a ;
+  text-align: center ;
+  width: 100% ;
+  padding: 80px 0 50px  ;
+}
+
+.our-word{
+  color: white;
+  font-size: 2.5rem ;
+  font-weight: 800;
+  margin: 0 ;
+}
+
+.our-text{
+  color: white ;
+  font-size: 1.3rem ;
+  margin: 20px 0 70px ;
+}
+
+.three-pic{
+  display: grid ;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 25px ;
+
+  
+}
+
+.one-box{
+  position: relative ; 
+  margin-bottom: 100px ; 
+}
+
+  /* to prevent over flow */
+.one-box img{
+  width: 100% ;
+}
+
+  /* the content inside each box ( icons , name ..) */
+.inside{
+  background-color: white ;
+  -webkit-box-sizing: border-box ;
+  -moz-box-sizing: border-box ;
+  -o-box-sizing: border-box ;
+  box-sizing: border-box ;
+  width: 85% ;
+  padding: 15px 30px 20px ;
+  margin: 0 auto ;
+  position: absolute ;
+  right: 0 ;
+  bottom: 0 ;
+  left: 0 ;
+  transform: translatey(50%) ;
+}
+
+.icons a{
+  color: #37139a ;
+  font-size: 25px ;
+}
+
+.icons{
+  display: flex ;
+  justify-content: space-evenly;
+}
+
+.name{
+  color:#37139a ;
+  font-size: 18px ;
+  margin: 10px 0 ;
+}
+  /* Our Team Section Ends ---------------------------------------------------- */
+
+  /* Call Back Section Starts ------------------------------------------------- */
+
+  /* full section which has header + container */
+.call-back-full{
+  background-color: #37139a ;
+  text-align: center ;
+  width: 100% ;
+  position: relative ;
+}
+
+.call-back-text{
+  background-color: white ;
+  text-align: center ;
+  padding: 75px 50px  ;
+}
+
+.call-word{
+  font-size: 40px ;
+  font-weight: 700;
+  margin: 0 ;
+}
+
+.call-text{
+  font-size: 1.2rem ;
+  margin-top: 15px ;
+}
+
+  /* special container for call-section */
+.container-add-two{
+  -webkit-box-sizing: border-box ;
+  -moz-box-sizing: border-box ;
+  -o-box-sizing: border-box ;
+  box-sizing: border-box ;
+  width: 50% ;
+  padding: 15px 25px ;
+}
+
+  /* section inside the container */
+.call-info{
+  color: white ;
+  font-size: 1.2rem ;
+  
+}
+
+  /* form  */
+.info{
+  display: flex ;
+  flex-direction: column ;
+}
+
+input[type="text"],
+.call-email{
+  color: white ;
+  background-color: transparent ;
+  border: none ;
+  border-bottom: 1px white solid ;
+  margin-bottom: 25px ;
+}
+
+input[type="text"]:not(.message),
+.call-email{
+  height: 70px ;
+}
+
+.message{
+  height: 100px ;
+}
+
+input[type="text"]::placeholder,
+.call-email::placeholder{
+  color: white ;
+}
+
+input[type="text"]:focus,
+.call-email:focus{
+  outline: none ;
+}
+
+.send-button{
+  background-color: rgb(255, 166, 0) ;
+  color: white ;
+  font-size: 1.2rem ;
+  width: 200px ;
+  height: 50px ;
+  border: none ;
+  margin: 20px 0 ;
+  cursor: pointer ;
+  transition: background-color 0.7s linear ;
+}
+
+.send-button:hover{
+  background-color: rgb(74, 74, 74) ;
+}
+
+  /* phone number and gmail */
+.calling-info{
+  display: flex ;
+  flex-wrap: wrap ;
+  justify-content: space-between;
+}
+
+.calling-info p{
+  display: inline-block ;
+}
+
+.call,
+.gmail{
+  margin-top: 20px ;
+}
+
+.call-info a{
+  font-size: 1.6rem ;
+}
+
+.call-icons{
+  display: grid ;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 15px ;
+  width: fit-content ;
+  margin: 25px 0 ;
+
+}
+
+.call-icons i{
+  border: 1px white solid ;
+  border-radius: 50% ;
+  padding: 10px ;
+  transition: background-color 0.6s linear ;
+}
+
+.call-icons i:hover{
+  background-color: rgb(255, 166, 0) ;
+}
+
+.map{
+  width: 48% ;
+  height: 100% ;
+  position: absolute ;
+  top: 0 ;
+  right: 0 ;
+}
+  /* Call Back Section Ends ------------------------------------------------- */
+
+  /* Testimonials Section Starts -------------------------------------------- */
+
+  /* overwrite on container */
+.test{
+  color: #2a2a2c ;
+  text-align: center ;
+  padding-top: 50px ;
+  overflow: hidden ;
+}
+
+.test-word{
+  color: #2a2a2c ;
+  font-size: 2.3rem ;
+  font-weight: 800;
+  width: 100% ;
+  margin: 0 ;
+}
+
+.test-text{
+  font-size: 1.1rem ;
+  font-weight: bold ;
+  line-height: 25px ;
+  width: 100% ;
+  margin: 15px 0 200px ;
+}
+
+.under-test{
+  -webkit-box-sizing: border-box ;
+  -moz-box-sizing: border-box ;
+  -o-box-sizing: border-box ;
+  box-sizing: border-box ;
+  width: 80% ;
+  padding: 100px 30px ;
+  border: 1px solid black ;
+  margin: 0 auto 80px  ;
+  position: relative ;
+  transform: skew(-20deg) ;
+  -webkit-box-shadow: 0 0 10px 25px rgb(247, 247, 247) ;
+  -moz-box-shadow: 0 0 10px 25px rgb(247, 247, 247) ;
+  -o-box-shadow: 0 0 10px 25px rgb(247, 247, 247) ;
+  box-shadow: 0 0 10px 25px rgb(247, 247, 247) ;
+}
+
+.pic-text{
+  display: flex ;
+  justify-content: center;
+  align-items: flex-end ;
+  flex-wrap: wrap ;
+  width: fit-content ;
+  position: absolute ;
+  top: 0 ;
+  left: 0 ;
+  /* making img and its text outside its parent and skewing back to noraml */
+  transform: translate(-15% , -60%) skew(20deg) ;
+}
+
+.test-img{
+  width: 200px ;
+  height: 200px ;
+  border-radius: 50% ;
+}
+
+.text-wrap{
+  font-size: 1.2rem ;
+  font-weight: bold ;
+  text-align: start ;
+  margin-left: 25px ;
+}
+
+  /* Rental word */
+.line-two{
+  color:#37139a
+}
+
+.full-text{
+  font-size: 1.15rem ;
+  line-height: 33px ;
+  transform: skew(10deg) ;
+}
+
+.img-under-text{
+  position: absolute ;
+  left: 0 ;
+  right: 0 ;
+  bottom: 50px  ;
+  margin: 0 auto ;
+  /* moving the img to the center of ( padding bottom space ) .. padding bottom equals 100px */
+  transform: translateY(50%) skew(20deg) ;
+}
+
+.three-buttons button{
+  background-color: #37139a;
+  width: 55px ;
+  height: 15px ;
+  border-radius: 10px ;
+  margin-bottom: 100px ;
+  transition: background-color 0.5s linear ;
+}
+
+.three-buttons button:hover{
+  background-color: black ;
+}
+  /* Testimonials Section Ends -------------------------------------------- */
+
+footer{
+  background-color:rgb(39, 38, 38);
+}
+
+  /* overwriting on container */ 
+.footer-container{
+  color: white ;
+  font-size: 1.3rem ;
+  line-height: 26px ;
+  display: flex ;
+  justify-content: space-between ;
+  flex-wrap: wrap ;
+  padding: 75px 0 ;
+}
+
+.footer-container > div{
+  width: 28% ;
+}
+
+.footer-titles{
+  font-size: 2.5rem ;
+}
+
+.text-icon-wraping{
+  display: flex ;
+  margin-top: 50px ;
+}
+
+.text-icon-wraping p{
+  margin-left: 10px ; 
+}
+
+  /* form */
+.subscribe{
+  display: flex ;
+  flex-wrap: wrap ;
+}
+
+  /* email input */
+.sub-email{
+  width: 175px ;
+  height: 50px;
+  border: none;
+  padding: 0 0 0 10px;
+  margin-top: 15px ;
+}
+
+.sub-email:focus{
+  outline: none ;
+}
+
+.subscribe-button{
+  color: white ;
+  background-color: #37139a;
+  width: 125px ;
+  height: 50px ;
+  border: none ;
+  margin-top: 15px ;
+  transition: background-color 0.3s linear ;
+}
+
+.subscribe-button:hover{
+  background-color: black ;
+}
+
+  /* icons-wraper */
+.footer-icons{
+  font-size: 25px ;
+  display: grid ;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 10px;
+  width: fit-content ;
+  margin-top: 40px ;
+}
+
+.footer-icons i{
+  border: 2px white solid ;
+  border-radius: 50% ;
+  padding: 10px ;
+  transition: background-color 0.3s linear ;
+}
+
+.footer-icons i:hover{
+  background-color: #37139a ;
+}
+
+.last-wraper{
+  background-color: white  ;
+  color: rgb(31, 31, 31) ;
+  font-size: 20px ;
+  text-align: center ;
+  -webkit-box-sizing: border-box ;
+  -moz-box-sizing: border-box ;
+  -o-box-sizing: border-box ;
+  box-sizing: border-box ;
+  width: 100% ;
+  padding: 15px  ;
+
+  
+}
+
+.last-p{
+  display: inline-block ;
+}
+
+.last-wraper a{
+  color: rgb(31, 31, 31) ;
+}
+
+ /* --------------- Done -------------- */
+ 
+
+
+
+
+
+
+
+
+
+ @media (max-width: 1200px){
+   .container{
+     width: 900px ;
+     /* border: 5px rgb(29, 197, 130) solid ; */
+    } 
+  /* ---------------Home---------------- */
+    .sm-wrap{
+    font-size: 4.5rem ;
+    letter-spacing: 65px ;
+  }
+  .maker{
+    text-indent: 65px ;
+  }
+  /* -------Done for home------ */
+  /* ------What we do---------*/
+  .title{
+  font-size: 1.3rem ;
+  }
+  /* ------Done for What we do------------*/
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px){
+  .container{
+    width: 700px ;
+    /* border: 5px red solid ; */
+  }
+    /* ---------------Home---------------- */
+  .sm-wrap{
+    font-size: 3.5rem ;
+    letter-spacing: 50px ;
+  }
+
+  .maker{
+    font-size: 2.8rem ;
+    text-indent: 50px;
+  }
+    /* -------Done for home------ */
+    /* -------Software Maker------*/
+  .software-maker-text{
+    padding: 20px ;
+  }
+    /* -------Done for Software Maker----*/
+    /* -------What we do-----------*/
+  .title{
+    font-size: 1.1rem ;
+  }
+
+  .article-text{
+    font-size: 1rem ;
+  }
+  /* ------Done for What we do------------*/
+  /* ---------Footer------------*/
+  .footer-titles{
+    font-size: 2.1rem ;
+  }
+  
+  .footer-container{
+    font-size: 1.1rem ;
+  }
+  .footer-icons{
+    font-size: 20px ;
+  }
+  
+  .footer-container > div{
+    width: 30% ;  
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+  .container{
+    width: 85% ;
+    /* border: 5px rgb(221, 210, 0) solid ; */
+  }
+    /* ---------------Home---------------- */
+  .sm-wrap{
+    font-size: 2.6rem ;
+    letter-spacing: 35px ;
+  }
+
+  .software{
+    /* to fit content without the letter spacing at the end */
+    width: 505px ;
+    margin: 0 auto ;
+  }
+
+  .maker{
+    font-size: 2.5rem ;
+    text-indent: 35px ;
+  }
+
+  .logo{
+    padding: 25px ;
+  }
+    /* -------Done for home------ */
+    /* --------About---------- */
+  .text-container{
+    width:100% ;
+  }
+
+  .right-about{
+    width:100%;
+  }
+
+  .about-word{
+    font-size: 1.9rem ;
+  }
+    /* -----Done for about----- */
+    /* -------Software Maker------*/
+  .software-maker-left{
+    width: 100% ;
+  }
+
+  .software-maker-text{
+    padding: 40px ;
+  }
+
+  .software-maker-img{
+    width: 100% ;
+    position: relative ;
+  }
+
+  .software-maker-word{
+    font-size: 2rem ;
+  }
+  /* -------Done for Software Maker------*/
+  /* ------What we do------------*/
+  .three-boxes{
+    grid-template-columns: repeat(1,90%);
+    justify-content: center ; 
+  }
+  .title{
+    font-size: 1.4rem ;
+  }
+
+  .article-text{
+    font-size: 1.2rem ;
+  }
+   /* ------Done for What we do------------*/
+   /* ----------Our Team----------------*/
+  .three-pic{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .our-word{
+    font-size: 2.2rem ;
+  }
+
+  .our-text{
+    font-size: 1.1rem ;
+  }
+
+  .three-pic .one-box{
+    width: auto ;
+    margin: 0 auto 100px ;
+  }
+  /* ----------Done for Our Team----------------*/
+  /* ----------Call Back Section------------*/
+  .map{
+    position: relative ;
+    width: 100% ;
+    height: 700px ;
+  }
+  
+  .container-add-two{
+    width: 100% ;
+  }
+  
+  .call-word{
+    font-size: 35px ;
+  }
+  
+  .call-text{
+    font-size: 1.1rem ;
+  }
+  /* ----------Done for Call Back Section------------*/
+  /* ------------Testimonials---------------------*/
+  .test{
+    overflow: visible ;
+  }
+
+  .under-test{
+  transform: skew(0deg) ; 
+  }
+
+  .img-under-text{
+    transform: translateY(50%) skew(0deg) ;
     
-    <!-- Testimonials -->
-    <section class="testimonials" id="test">
-      <div class="container test">
-        <h1 class="test-word">Testimonials</h1>
-        <p class="test-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore
-        </p>
-        <article class="under-test">
-          <div class="pic-text">
-            <img src="images/team_img2.jpg" alt="" class="test-img">
-            <div class="text-wrap">
-              <p class="line-one">Due markes</p>
-              <p class="line-two">Rental</p>
-            </div>
-          </div>
-          <p class="full-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit ess
-          </p>
-          <img src="images/test.png" alt="" class="img-under-text">
-        </article>
-        <div class="three-buttons">
-          <button></button>
-          <button></button>
-          <button></button>
-        </div>
-      </div>
-    </section>
-    <!-- Testimonials -->
+  }
 
-    <!-- Footer Section -->
-    <footer>
-      <div class="container footer-container">
-        <div class="useful">
-          <h1 class="footer-titles">Useful links</h1>
-          <p class="useful-text">
-            It is a long established fact that a reader will be distracted 
-            by the readable content of a page when looking at its
-            layout. The point of using Lorem Ipsum is that it has a more-or-less 
-            normal distribution of letters,
-          </p>
-        </div>
-        <div class="find">
-          <h1 class="footer-titles">Find us</h1>
-          <div class="text-icon-wraping">
-            <a href="#home">
-              <i class="fa-solid fa-location-dot"></i>
-            </a>
-            <p>
-              It is a long established fact that a
-              reader will be distracted
-            </p>
-          </div>
-          <div class="text-icon-wraping">
-            <a href="#home">
-              <i class="fa-solid fa-phone"></i>
-            </a>
-            <div class="numbers">
-              <p>
-                (+71) 1234567890
-              </p>
-              <p>
-                (+71) 1234567890
-              </p>
-            </div>
-          </div>
-          <div class="text-icon-wraping">
-            <a href="#home">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <p>
-              demo@gmail.com
-            </p>
-          </div>
-        </div>
-        <div class="letter">
-          <h1 class="footer-titles">News letter</h1>
-          <form class="subscribe">
-            <input type="email" placeholder="Email" class="sub-email">
-            <input type="submit" value="Subscribe" class="subscribe-button">
-          </form>
-          <div class="footer-icons">
-            <a href="#home">
-              <i class="fa-brands fa-facebook-f fa-fw"></i>
-            </a>
-            <a href="#home">
-              <i class="fa-brands fa-twitter fa-fw"></i>
-            </a>
-            <a href="#home">
-              <i class="fa-brands fa-linkedin-in fa-fw"></i>
-            </a>
-            <a href="#home">
-              <i class="fa-brands fa-instagram fa-fw"></i>
-            </a>  
-          </div>
-        </div>
-      </div>
-      <div class="last-wraper">
-        <i class="fa-regular fa-copyright"></i>
-        <p class="last-p">
-          2019 All Rights Reserved. Design by
-        </p>
-        <a href="https://html.design/" target="_blank" class="last-link">
-          Free Html Templates
-        </a>
-      </div>
-    </footer>  
-  </body>
-</html>
+  .full-text{
+    font-size: 1rem ;
+    transform: skew(0deg) ;
+
+  }
+
+  .pic-text{
+    transform: translate(-15% , -60%) skew(0deg) ;
+  }
+
+  .test-word{
+    font-size: 1.8rem ;
+  }
+
+  .test-text{
+    font-size: 1rem ;
+  }
+  /*-------Done for Testimonials---------*/
+  /*--------Footer------------*/
+   .footer-titles{
+    font-size: 2.5rem ;
+  }
+  
+  .footer-container{
+    font-size: 1.3rem ;
+  }
+  .footer-icons{
+    font-size: 25px ;
+  }
+  
+  .footer-container > div{
+    width: 100% ;  
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 575px){
+  .container{
+    width: 94% ;
+    /* border: 2px solid orchid ; */
+  }
+  /* ------------Home------------ */
+  .sm-wrap{
+    font-size: 2.2rem ;
+    letter-spacing: 12px ;
+  }  
+
+  .software{
+    /* to fit content without the letter spacing at the end */
+    width: 303px ;
+    margin: 0 auto ;
+  }
+
+  .maker{
+    font-size: 2rem ;
+    letter-spacing: 17px;
+    text-indent: 17px ;
+    margin-top: 10px ;
+  }
+
+  .logo{
+    border: none ;
+    padding: 0 ;
+    position: absolute ;
+    top: 50% ;
+    left: 5% ; 
+    transform: translateY(-50%) ;
+  }
+
+  .fa-custom{
+    display: none ;
+  }
+
+  .menu-logo{
+    top: 50% ;
+    transform: translatey(-50%) ;
+  }
+
+  .home-section{
+    height: calc(728px - 150px) ;
+  }
+
+  .home{
+    height: auto ;
+  }
+  /* ------------Done for home----------- */
+
+  .call-back-text{
+    padding: 75px 0px  ;
+  }
+
+  .call-word{
+    font-size: 1.9rem ;
+  }
+  /* ----------Done for Call Back Section------------*/
+  /* -------------Footer----------*/
+ }
