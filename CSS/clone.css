@@ -20,13 +20,13 @@ a{
   width: 1140px ;
   margin: 0 auto ;
   position: relative ;
+  /* border: yellow 2px solid ;; */
 }
 
   /* Home Section Starts ----------------------------------------------- */
 .home{
   overflow: hidden ;
   width: 100% ;
-  height: 900px ;
   background-image: url(../images/banner.jpg);
   background-size: 100% 100% ;
 }
@@ -241,10 +241,14 @@ button.about:hover{
 .software-maker-section{
   background-color: #240082 ;  
   color: white ;
-  width: 100% ;  
   position: relative ;
   /* making the container far from top 75px */ 
   padding-top: 70px ;
+  padding-left: 20px ;
+}
+  /* special container */
+.container-add{
+  width: 95% ;
 }
 
   /* the section inside the container */
@@ -269,6 +273,7 @@ button.about:hover{
   padding: 40px ;
   border: 1px solid white ;
   margin-top: 35px ;
+  /* margin-left: 20px ; */
 }
 
 .click-here-button{
@@ -312,7 +317,7 @@ button.about:hover{
 
 .do-text{
   font-size: 1.2rem ;
-  margin: 15px 0 75px ;
+  margin: 15px 0 50px ;
 }
 
 .three-boxes{
@@ -327,6 +332,7 @@ button.about:hover{
   padding: 30px ;
   padding-bottom: 70px ;
   transition: background-color 0.7s linear , color 0.5s linear ;
+  margin-top: 25px; 
 }
 
 .child:hover{
@@ -350,7 +356,7 @@ button.about:hover{
 
 .title{
   font-size: 1.4rem ;
-  font-weight: 700;
+  font-weight: 800;
   margin: 30px 0 ;
 }
 
@@ -786,6 +792,15 @@ footer{
 
  /* --------------- Done -------------- */
  
+
+
+
+
+
+
+
+
+
  @media (max-width: 1200px){
    .container{
      width: 900px ;
@@ -800,78 +815,195 @@ footer{
     text-indent: 65px ;
   }
   /* -------Done for home------ */
+  /* ------What we do---------*/
+  .title{
+  font-size: 1.3rem ;
+  }
+  /* ------Done for What we do------------*/
 }
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 992px){
- .container{
-   width: 700px ;
-   /* border: 5px red solid ; */
- }
- /* ---------------Home---------------- */
- .sm-wrap{
-   font-size: 3.5rem ;
-   letter-spacing: 50px ;
- }
+  .container{
+    width: 700px ;
+    /* border: 5px red solid ; */
+  }
+    /* ---------------Home---------------- */
+  .sm-wrap{
+    font-size: 3.5rem ;
+    letter-spacing: 50px ;
+  }
 
+  .maker{
+    font-size: 2.8rem ;
+    text-indent: 50px;
+  }
+    /* -------Done for home------ */
+    /* -------Software Maker------*/
+  .software-maker-text{
+    padding: 20px ;
+  }
+    /* -------Done for Software Maker----*/
+    /* -------What we do-----------*/
+  .title{
+    font-size: 1.1rem ;
+  }
 
- .maker{
-  font-size: 2.8rem ;
-  text-indent: 50px;
+  .article-text{
+    font-size: 1rem ;
+  }
+  /* ------Done for What we do------------*/
+
 }
-  /* -------Done for home------ */
-  /* -------Software Maker------*/
 
 
-.software-maker-text{
-  padding: 20px ;
-}
 
-}
+
+
+
+
+
+
 
 @media (max-width: 768px){
   .container{
-   width: 550px ;
-   width: 90% ;
-   /* border: 5px rgb(221, 210, 0) solid ; */
- }
- /* ---------------Home---------------- */
- .sm-wrap{
-   font-size: 2.8rem ;
-   font-size: 7.5vw ;
-   letter-spacing: 39px ;
-   letter-spacing: 6.5vw ;
- }
+    width: 90% ;
+    /* border: 5px rgb(221, 210, 0) solid ; */
+  }
+    /* ---------------Home---------------- */
+  .sm-wrap{
+    font-size: 2.6rem ;
+    letter-spacing: 35px ;
+  }
 
- .maker{
-  font-size: 2.5rem ;
-  text-indent: 39px ;
-  text-indent: 6.5vw;
- }
-  /* -------Done for home------ */
-  /* --------About---------- */
-.text-container{
-  width:100% ;
+  .software{
+    /* to fit content without the letter spacing at the end */
+    width: 505px ;
+    margin: 0 auto ;
+  }
+
+  .maker{
+    font-size: 2.5rem ;
+    text-indent: 35px ;
+  }
+
+  .logo{
+    padding: 25px ;
+  }
+    /* -------Done for home------ */
+    /* --------About---------- */
+  .text-container{
+    width:100% ;
+  }
+
+  .right-about{
+    width:100%;
+  }
+
+  .about-word{
+    font-size: 1.9rem ;
+  }
+    /* -----Done for about----- */
+    /* -------Software Maker------*/
+  .software-maker-left{
+    width: 100% ;
+  }
+
+  .software-maker-text{
+    padding: 40px ;
+  }
+
+  .software-maker-img{
+    width: 100% ;
+    position: relative ;
+  }
+
+  .software-maker-word{
+    font-size: 2rem ;
+  }
+  /* -------Done for Software Maker------*/
+  /* ------What we do------------*/
+  .three-boxes{
+    grid-template-columns: repeat(1,90%);
+    justify-content: center ; 
+  }
+  .title{
+    font-size: 1.4rem ;
+  }
+
+  .article-text{
+    font-size: 1.2rem ;
+  }
+   /* ------Done for What we do------------*/
 }
 
-.right-about{
-  width:100%;
-}
-  /* -----Done for about----- */
-  /* -------Software Maker------*/
-.software-maker-left{
-  width: 100% ;
-}
 
-.software-maker-text{
-  padding: 40px ;
-}
 
-.software-maker-img{
-  width: 100% ;
-  position: relative ;
-}
 
-.software-maker-word{
-  font-size: 2rem ;
-}
+
+
+
+
+
+@media (max-width: 575px){
+  .container{
+    width: 98% ;
+    /* border: 2px solid orchid ; */
+  }
+  /* ------------Home------------ */
+  .sm-wrap{
+    font-size: 2.2rem ;
+    letter-spacing: 12px ;
+  }  
+
+  .software{
+    /* to fit content without the letter spacing at the end */
+    width: 303px ;
+    margin: 0 auto ;
+  }
+
+  .maker{
+    font-size: 2rem ;
+    letter-spacing: 17px;
+    text-indent: 17px ;
+    margin-top: 10px ;
+  }
+
+  .logo{
+    border: none ;
+    padding: 0 ;
+    position: absolute ;
+    top: 50% ;
+    left: 5% ; 
+    transform: translateY(-50%) ;
+  }
+
+  .fa-custom{
+    display: none ;
+  }
+
+  .menu-logo{
+    top: 50% ;
+    transform: translatey(-50%) ;
+  }
+
+  .home-section{
+    height: calc(728px - 150px) ;
+  }
+
+  .home{
+    height: auto ;
+  }
+  /* ------------Done for home----------- */
+
+
 }
