@@ -20,7 +20,6 @@ a{
   width: 1140px ;
   margin: 0 auto ;
   position: relative ;
-  /* border: yellow 2px solid ;; */
 }
 
   /* Home Section Starts ----------------------------------------------- */
@@ -47,9 +46,7 @@ a{
 
 .logo{
   width: fit-content ;
-  padding: 25px ;
-  padding-right: 50px ;
-  padding-left: 50px ;
+  padding: 25px 50px ;
   border: 3px solid white ;
   border-top: none ;
   margin: 0 auto ; 
@@ -224,11 +221,9 @@ button.about:hover{
 }
 
 .about-img{
-  /* margin-left: -75px ; */
   width: 100% ;
   /* making a part of img outside the container from left  */
   transform: translateX(-15%) ;
-  /* left: 50% ; */
 }
   /* right img */
 .right-about{
@@ -242,9 +237,8 @@ button.about:hover{
   background-color: #240082 ;  
   color: white ;
   position: relative ;
-  /* making the container far from top 75px */ 
-  padding-top: 70px ;
-  padding-left: 20px ;
+  /* making the container far from top 70px and from left 20px */ 
+  padding-top: 70px 0 0 20px ;
 }
   /* special container */
 .container-add{
@@ -273,7 +267,6 @@ button.about:hover{
   padding: 40px ;
   border: 1px solid white ;
   margin-top: 35px ;
-  /* margin-left: 20px ; */
 }
 
 .click-here-button{
@@ -282,7 +275,7 @@ button.about:hover{
   height: 70px ;
   border: none ;
   border-radius: 10px ;
-  margin: 45px 0 70px;
+  margin: 45px 0;
   cursor: pointer ;
   transition: color 0.3s linear , background-color 0.7s linear  ;
 }
@@ -409,9 +402,7 @@ button.about:hover{
 .three-pic{
   display: grid ;
   grid-template-columns: repeat(3,1fr);
-  column-gap: 25px ;
-
-  
+  column-gap: 25px ; 
 }
 
 .one-box{
@@ -419,7 +410,6 @@ button.about:hover{
   margin-bottom: 100px ; 
 }
 
-  /* to prevent over flow */
 .one-box img{
   width: 100% ;
 }
@@ -475,7 +465,6 @@ button.about:hover{
 }
 
 .call-word{
-  font-size: 40px ;
   font-weight: 700;
   margin: 0 ;
 }
@@ -498,8 +487,7 @@ button.about:hover{
   /* section inside the container */
 .call-info{
   color: white ;
-  font-size: 1.2rem ;
-  
+  font-size: 1.2rem ; 
 }
 
   /* form  */
@@ -563,6 +551,10 @@ input[type="text"]:focus,
   display: inline-block ;
 }
 
+.call{
+  text-align: left ;
+}
+
 .call,
 .gmail{
   margin-top: 20px ;
@@ -613,7 +605,6 @@ input[type="text"]:focus,
 
 .test-word{
   color: #2a2a2c ;
-  font-size: 2.3rem ;
   font-weight: 800;
   width: 100% ;
   margin: 0 ;
@@ -646,21 +637,23 @@ input[type="text"]:focus,
 
 .pic-text{
   display: flex ;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end ;
   flex-wrap: wrap ;
   width: fit-content ;
   position: absolute ;
   top: 0 ;
   left: 0 ;
-  /* making img and its text outside its parent and skewing back to noraml */
-  transform: translate(-15% , -60%) skew(20deg) ;
+  /* making the img and its text in the padding area */
+  transform: translatey(-60%) skew(20deg) ;
 }
 
 .test-img{
   width: 200px ;
   height: 200px ;
   border-radius: 50% ;
+  /* making a part of the img outside */
+  transform: translatex(-25%) ;
 }
 
 .text-wrap{
@@ -814,53 +807,33 @@ footer{
   color: rgb(31, 31, 31) ;
 }
 
- /* --------------- Done -------------- */
- 
+@media (max-width: 1200px){
+  .container{
+    width: 900px ;
+  }
 
-
-
-
-
-
-
-
-
- @media (max-width: 1200px){
-   .container{
-     width: 900px ;
-     /* border: 5px rgb(29, 197, 130) solid ; */
-    } 
-  /* ---------------Home---------------- */
-    .sm-wrap{
+    /* ---------------Home---------------- */
+  .sm-wrap{
     font-size: 4.5rem ;
     letter-spacing: 65px ;
   }
+
   .maker{
+    /* text indent equals to letter spacing */
     text-indent: 65px ;
   }
-  /* -------Done for home------ */
-  /* ------What we do---------*/
+
+    /* ------What we do---------*/
   .title{
   font-size: 1.3rem ;
   }
-  /* ------Done for What we do------------*/
 }
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 992px){
   .container{
     width: 700px ;
-    /* border: 5px red solid ; */
   }
+
     /* ---------------Home---------------- */
   .sm-wrap{
     font-size: 3.5rem ;
@@ -871,12 +844,12 @@ footer{
     font-size: 2.8rem ;
     text-indent: 50px;
   }
-    /* -------Done for home------ */
+
     /* -------Software Maker------*/
   .software-maker-text{
     padding: 20px ;
   }
-    /* -------Done for Software Maker----*/
+
     /* -------What we do-----------*/
   .title{
     font-size: 1.1rem ;
@@ -885,8 +858,14 @@ footer{
   .article-text{
     font-size: 1rem ;
   }
-  /* ------Done for What we do------------*/
-  /* ---------Footer------------*/
+
+    /* ------Call Back Section---------*/
+  .second-number{
+    /* making a space between two numbers */
+    margin-left: 31px
+  }
+
+    /* ---------Footer------------*/
   .footer-titles{
     font-size: 2.1rem ;
   }
@@ -894,29 +873,19 @@ footer{
   .footer-container{
     font-size: 1.1rem ;
   }
+
   .footer-icons{
     font-size: 20px ;
   }
   
   .footer-container > div{
     width: 30% ;  
-  }
- 
+  } 
 }
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px){
   .container{
     width: 85% ;
-    /* border: 5px rgb(221, 210, 0) solid ; */
   }
     /* ---------------Home---------------- */
   .sm-wrap{
@@ -932,13 +901,14 @@ footer{
 
   .maker{
     font-size: 2.5rem ;
+    /* equals to letter spacing */
     text-indent: 35px ;
   }
 
   .logo{
     padding: 25px ;
   }
-    /* -------Done for home------ */
+
     /* --------About---------- */
   .text-container{
     width:100% ;
@@ -951,7 +921,7 @@ footer{
   .about-word{
     font-size: 1.9rem ;
   }
-    /* -----Done for about----- */
+
     /* -------Software Maker------*/
   .software-maker-left{
     width: 100% ;
@@ -969,12 +939,14 @@ footer{
   .software-maker-word{
     font-size: 2rem ;
   }
-  /* -------Done for Software Maker------*/
-  /* ------What we do------------*/
+
+    /* ------What we do------------*/
   .three-boxes{
+    /* making 1 column instead of 3 so we can have exactly one box in each row */
     grid-template-columns: repeat(1,90%);
     justify-content: center ; 
   }
+
   .title{
     font-size: 1.4rem ;
   }
@@ -982,9 +954,10 @@ footer{
   .article-text{
     font-size: 1.2rem ;
   }
-   /* ------Done for What we do------------*/
-   /* ----------Our Team----------------*/
+
+    /* ----------Our Team----------------*/
   .three-pic{
+    /* making 1 column instead of 3 so we can have exactly one box in each row */
     grid-template-columns: repeat(1,1fr);
   }
 
@@ -1000,12 +973,12 @@ footer{
     width: auto ;
     margin: 0 auto 100px ;
   }
-  /* ----------Done for Our Team----------------*/
-  /* ----------Call Back Section------------*/
+
+    /* ----------Call Back Section------------*/
   .map{
-    position: relative ;
     width: 100% ;
     height: 700px ;
+    position: relative ;
   }
   
   .container-add-two{
@@ -1019,29 +992,31 @@ footer{
   .call-text{
     font-size: 1.1rem ;
   }
-  /* ----------Done for Call Back Section------------*/
-  /* ------------Testimonials---------------------*/
+
+    /* ------------Testimonials---------------------*/
   .test{
     overflow: visible ;
   }
 
   .under-test{
-  transform: skew(0deg) ; 
+    /* returning from previous skew */
+    transform: skew(0deg) ; 
   }
 
   .img-under-text{
+    /* returning from previous skew */
     transform: translateY(50%) skew(0deg) ;
-    
   }
 
   .full-text{
     font-size: 1rem ;
+    /* returning from previous skew */
     transform: skew(0deg) ;
-
   }
 
   .pic-text{
-    transform: translate(-15% , -60%) skew(0deg) ;
+    /* returning from previous skew */
+    transform: translatey(-60%) skew(0deg) ;
   }
 
   .test-word{
@@ -1051,15 +1026,16 @@ footer{
   .test-text{
     font-size: 1rem ;
   }
-  /*-------Done for Testimonials---------*/
-  /*--------Footer------------*/
-   .footer-titles{
+
+    /*--------Footer------------*/
+  .footer-titles{
     font-size: 2.5rem ;
   }
   
   .footer-container{
     font-size: 1.3rem ;
   }
+
   .footer-icons{
     font-size: 25px ;
   }
@@ -1067,23 +1043,14 @@ footer{
   .footer-container > div{
     width: 100% ;  
   }
- 
 }
-
-
-
-
-
-
-
-
 
 @media (max-width: 575px){
   .container{
     width: 94% ;
-    /* border: 2px solid orchid ; */
   }
-  /* ------------Home------------ */
+
+    /* ------------Home------------ */
   .sm-wrap{
     font-size: 2.2rem ;
     letter-spacing: 12px ;
@@ -1107,28 +1074,31 @@ footer{
     padding: 0 ;
     position: absolute ;
     top: 50% ;
-    left: 5% ; 
+    left: 5% ;
+    /* centering in the header section vertically */ 
     transform: translateY(-50%) ;
-  }
-
-  .fa-custom{
-    display: none ;
   }
 
   .menu-logo{
     top: 50% ;
+    /* centering in the header section vertically */
     transform: translatey(-50%) ;
   }
 
+  .fa-custom{
+    /* making search icon disable */
+    display: none ;
+  }
+
   .home-section{
-    height: calc(728px - 150px) ;
+    height: 585px ;   
   }
 
   .home{
     height: auto ;
   }
-  /* ------------Done for home----------- */
 
+    /* --------------Call Back Section---------------  */
   .call-back-text{
     padding: 75px 0px  ;
   }
@@ -1136,6 +1106,4 @@ footer{
   .call-word{
     font-size: 1.9rem ;
   }
-  /* ----------Done for Call Back Section------------*/
-  /* -------------Footer----------*/
  }
