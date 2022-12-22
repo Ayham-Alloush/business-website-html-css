@@ -238,7 +238,7 @@ button.about:hover{
   color: white ;
   position: relative ;
   /* making the container far from top 70px and from left 20px */ 
-  padding-top: 70px 0 0 20px ;
+  padding: 70px 0 0 20px ;
 }
   /* special container */
 .container-add{
@@ -653,7 +653,7 @@ input[type="text"]:focus,
   height: 200px ;
   border-radius: 50% ;
   /* making a part of the img outside */
-  transform: translatex(-25%) ;
+  transform: translatex(-20%) ;
 }
 
 .text-wrap{
